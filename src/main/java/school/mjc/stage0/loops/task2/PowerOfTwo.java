@@ -9,8 +9,7 @@ public class PowerOfTwo {
 
         int exponent = 0;
         while (exponent <= power) {
-            long result = (long) Math.pow(2, exponent);
-            System.out.println(result);
+            System.out.println((long) Math.pow(2, exponent));
             exponent++;
         }
     }

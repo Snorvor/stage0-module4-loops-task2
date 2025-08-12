@@ -5,14 +5,10 @@ public class FactorialNumbers {
         int number = 0;
         while (number <= printToInclusive) {
             long result = 1;
-            if (number == 0) {
-                result = 1;
-            } else {
-                int i = 1;
-                while (i <= number) {
-                    result *= i;
-                    i++;
-                }
+            int i = 1;
+            while (i <= number) {
+                result *= i;
+                i++;
             }
             System.out.println(result);
             number++;

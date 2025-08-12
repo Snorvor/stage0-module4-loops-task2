@@ -2,16 +2,17 @@ package school.mjc.stage0.loops.task2;
 
 public class WordsBuilder {
     public void buildPhrase(char... chars) {
-        if (chars == null || chars.length == 0) {
-            System.out.println("No characters provided");
+        if (chars.length == 0) {
+            System.out.println("");
             return;
         }
 
-        int i = 0;
-        while (i < chars.length) {
-            System.out.print(chars[i]);
-            i++;
+        StringBuilder phrase = new StringBuilder();
+        int index = 0;
+        while (index < chars.length) {
+            phrase.append(chars[index]);
+            index++;
         }
-        System.out.println(); // Add a newline at the end
+        System.out.println(phrase.toString());
     }
 }

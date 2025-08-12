@@ -2,20 +2,20 @@ package school.mjc.stage0.loops.task2;
 
 public class FactorialNumbers {
     public void printFactorialRow(int printToInclusive) {
-        int i = 0;
-
-        while (i <= printToInclusive) {
-            long factorial = 1;
-            int j = 1;
-
-            // Calculate factorial of i
-            while (j <= i) {
-                factorial *= j;
-                j++;
+        int number = 0;
+        while (number <= printToInclusive) {
+            long result = 1;
+            if (number == 0) {
+                result = 1;
+            } else {
+                int i = 1;
+                while (i <= number) {
+                    result *= i;
+                    i++;
+                }
             }
-
-            System.out.println(factorial);
-            i++;
+            System.out.println(result);
+            number++;
         }
     }
 }

@@ -6,7 +6,6 @@ public class WordsBuilder {
             System.out.println("");
             return;
         }
-
         StringBuilder phrase = new StringBuilder();
         int index = 0;
         while (index < chars.length) {
